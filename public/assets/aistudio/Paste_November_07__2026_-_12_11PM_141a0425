@@ -1,0 +1,1459 @@
+# MASTER DEVELOPMENT PROMPT — GRANTLY
+## Unified Scholarship Discovery & Management Platform
+
+**Project Name:** GRANTLY  
+**Tagline:** Every opportunity deserves a fair chance.  
+**Category:** EdTech / FinTech / AI-powered Scholarship Management  
+**Challenge Track:** Intermediate  
+**Primary Objective:** Build a premium, fully responsive, intelligent scholarship discovery and management platform that transforms the entire student scholarship journey into one seamless digital experience.
+
+---
+
+# 1. YOUR ROLE
+
+Act as a senior product designer, UI/UX architect, full-stack React developer, SaaS product engineer, database architect, and AI integration specialist.
+
+Your task is to design and develop **GRANTLY**, a production-quality scholarship discovery and management platform.
+
+This is a competitive hackathon submission. The final product must demonstrate:
+
+- Exceptional visual design.
+- Strong product thinking.
+- Meaningful innovation.
+- Six fully connected core features.
+- Real functionality rather than static mockups.
+- A seamless user journey.
+- Secure handling of student information.
+- Excellent responsive design.
+- Professional presentation quality.
+
+Do not create a generic admin dashboard or an ordinary scholarship listing website.
+
+Build a complete digital product that feels like a real, professionally funded EdTech startup.
+
+**Most important instruction:** Prioritize the completeness and functionality of all six core features. Do not sacrifice functionality for visual effects.
+
+---
+
+# 2. PRODUCT VISION
+
+GRANTLY simplifies the educational financial assistance journey.
+
+Students often struggle with:
+
+1. Finding relevant scholarship opportunities.
+2. Understanding complicated eligibility requirements.
+3. Managing multiple applications.
+4. Organizing required documents.
+5. Remembering important deadlines.
+6. Knowing what to do next.
+
+GRANTLY solves these problems through six interconnected modules.
+
+### The six core modules
+
+1. Smart Student Profile.
+2. Scholarship Discovery Engine.
+3. Eligibility Intelligence Engine.
+4. Application Command Center.
+5. Smart Document Vault.
+6. Deadline Intelligence & Personalized Calendar.
+
+Every module must share information with the others.
+
+The system must understand the student's profile, recommend opportunities, evaluate eligibility, prepare application requirements, manage documents, and prioritize upcoming actions.
+
+---
+
+# 3. TECHNOLOGY STACK
+
+Use the following stack:
+
+### Frontend
+- React with Vite.
+- JavaScript or TypeScript, preferably TypeScript.
+- Tailwind CSS.
+- React Router.
+- Lucide React icons.
+- Framer Motion for interface transitions.
+- GSAP only for selected landing-page animations.
+
+### Backend
+- Supabase.
+- PostgreSQL database.
+- Supabase Authentication.
+- Supabase Storage.
+- Supabase Row Level Security.
+- Supabase Edge Functions or another secure server-side API layer.
+
+### AI Integration
+- Gemini API through a secure backend endpoint.
+- Structured prompts for scholarship explanations.
+- Context-aware assistant grounded in scholarship database information.
+
+### Other
+- React Hook Form for form handling.
+- Zod for validation.
+- Recharts for meaningful analytics.
+- date-fns for date management.
+- React Hot Toast or Sonner for notifications.
+
+Do not install unnecessary libraries or create an unnecessarily complicated architecture.
+
+Use reusable components and a clean folder structure.
+
+---
+
+# 4. BRAND IDENTITY AND DESIGN SYSTEM
+
+The website should have a premium, modern, trustworthy, sophisticated visual identity.
+
+The overall design should combine the visual quality of:
+
+- Premium FinTech dashboards.
+- Modern EdTech platforms.
+- Professional SaaS applications.
+- Minimal editorial design.
+
+Avoid the appearance of a typical college project.
+
+## Color palette
+
+Use this design direction:
+
+| Element | Color |
+|---|---|
+| Primary | #635BFF |
+| Primary Dark | #4941D1 |
+| Secondary | #8B5CF6 |
+| Accent | #14B8A6 |
+| Main Background | #F8F9FC |
+| Surface | #FFFFFF |
+| Primary Text | #151827 |
+| Secondary Text | #697386 |
+| Borders | #E8EAF1 |
+| Success | #16A34A |
+| Warning | #F59E0B |
+| Danger | #DC2626 |
+
+Use a light-first interface.
+
+Provide an optional dark theme with properly adapted colors.
+
+## Typography
+
+Use:
+- Manrope for headings.
+- Inter for body text and interface elements.
+
+Typography should have a clear hierarchy.
+
+## Design principles
+
+- Generous whitespace.
+- Consistent spacing.
+- Rounded cards with subtle borders.
+- Subtle shadows.
+- Professional data visualizations.
+- Clear information hierarchy.
+- Smooth transitions.
+- Accessible color contrast.
+- Consistent iconography.
+- Beautiful empty states.
+- Skeleton loading states.
+
+Avoid:
+- Excessive glassmorphism.
+- Excessive gradients.
+- Random floating elements.
+- Overuse of animations.
+- Excessively rounded cards everywhere.
+- Generic AI-generated dashboard layouts.
+- Unnecessary decorative illustrations.
+
+Make the interface visually distinctive through thoughtful composition and information architecture.
+
+---
+
+# 5. WEBSITE STRUCTURE AND ROUTES
+
+Create the following routes.
+
+## Public website
+
+- `/` — Landing page.
+- `/how-it-works` — Product explanation.
+- `/scholarships` — Public scholarship discovery.
+- `/scholarships/:id` — Scholarship details.
+- `/login` — Login.
+- `/register` — Registration.
+- `/forgot-password` — Password recovery.
+
+## Authenticated application
+
+- `/onboarding` — Student onboarding.
+- `/dashboard` — Main dashboard.
+- `/dashboard/profile` — Student profile.
+- `/dashboard/discover` — Personalized scholarship discovery.
+- `/dashboard/scholarships/:id` — Detailed scholarship information.
+- `/dashboard/eligibility/:id` — Eligibility analysis.
+- `/dashboard/applications` — Application command center.
+- `/dashboard/documents` — Document vault.
+- `/dashboard/calendar` — Deadline calendar.
+- `/dashboard/assistant` — Ask GRANTLY.
+- `/dashboard/notifications` — Notification center.
+- `/dashboard/settings` — Account and privacy settings.
+
+Include a custom 404 page.
+
+Protect authenticated routes and redirect users appropriately.
+
+---
+
+# 6. PUBLIC LANDING PAGE
+
+Create an exceptional landing page that immediately communicates the product's value.
+
+## Navigation
+
+Logo: GRANTLY.
+
+Navigation links:
+- Home.
+- Discover Scholarships.
+- How It Works.
+- About.
+
+Right-side actions:
+- Log In.
+- Get Started.
+
+Use a sticky navbar with subtle background transitions.
+
+## Hero section
+
+Headline:
+
+**Your Future Deserves Funding.**
+
+Supporting text:
+
+"Discover scholarships that match your potential, understand your eligibility, and manage every application — all in one intelligent platform."
+
+Primary CTA:
+"Find My Scholarships"
+
+Secondary CTA:
+"Explore How It Works"
+
+Include a premium dashboard preview or an attractive product visualization.
+
+The hero should immediately explain what GRANTLY does.
+
+## Trust and value section
+
+Display four key benefits:
+
+- Personalized Scholarship Discovery.
+- Explainable Eligibility.
+- Organized Applications.
+- Intelligent Deadline Tracking.
+
+Avoid fake statistics or fabricated claims about the number of students helped.
+
+## How it works
+
+Create a visual four-step process:
+
+1. Create your student profile.
+2. Discover relevant scholarships.
+3. Understand your eligibility.
+4. Manage applications and deadlines.
+
+## Feature showcase
+
+Present all six features with visually distinct sections.
+
+Each section should explain the actual user problem and the corresponding solution.
+
+## Product preview
+
+Show a realistic dashboard preview with:
+
+- Scholarship recommendations.
+- Eligibility indicators.
+- Application tracking.
+- Document readiness.
+- Upcoming deadlines.
+
+## Final CTA
+
+Headline:
+
+"Your next opportunity starts here."
+
+Button:
+"Create Your Free Account"
+
+## Footer
+
+Include:
+- Product links.
+- Discover scholarships.
+- About.
+- Contact.
+- Privacy Policy.
+- Terms of Service.
+- Social links.
+
+---
+
+# 7. CORE FEATURE 01 — SMART STUDENT PROFILE
+
+This module is the foundation of GRANTLY.
+
+Build a multi-step onboarding experience.
+
+## Step 1: Personal information
+
+Fields:
+- Full name.
+- Date of birth.
+- State.
+- District.
+- Gender, only if relevant to scholarship eligibility.
+- Optional category or other scheme-specific eligibility information.
+
+## Step 2: Educational information
+
+Fields:
+- Institution name.
+- Institution type.
+- Course.
+- Degree.
+- Current academic year.
+- Enrollment year.
+- Expected graduation year.
+- Institution location.
+
+## Step 3: Academic information
+
+Fields:
+- Latest percentage or CGPA.
+- Previous academic performance.
+- Current semester or year.
+- Academic achievements (optional).
+
+## Step 4: Financial information
+
+Fields:
+- Annual family income.
+- Income range.
+- Optional financial circumstances relevant to specific scholarships.
+
+## Step 5: Scholarship preferences
+
+Allow students to select:
+- Government scholarships.
+- Private scholarships.
+- Institutional scholarships.
+- Merit-based scholarships.
+- Need-based scholarships.
+- Research grants.
+- Other relevant funding opportunities.
+
+## Profile functionality
+
+Implement:
+
+1. Editable profile.
+2. Profile completeness indicator.
+3. Missing information warnings.
+4. Field-level validation.
+5. Save and continue.
+6. Persistent profile information.
+7. Profile readiness dashboard.
+
+Calculate profile completeness from required profile fields.
+
+Do not force students to provide sensitive information that is unnecessary for their selected opportunities.
+
+## Important
+
+Profile information must automatically populate the Eligibility Intelligence Engine and Scholarship Discovery Engine.
+
+Students should not have to enter the same information repeatedly.
+
+---
+
+# 8. CORE FEATURE 02 — SCHOLARSHIP DISCOVERY ENGINE
+
+Build a professional scholarship discovery experience.
+
+## Discovery dashboard
+
+Create:
+
+- Search bar.
+- Advanced filter sidebar.
+- Sort functionality.
+- Category filters.
+- Scholarship cards.
+- Personalized recommendation sections.
+
+## Scholarship card design
+
+Every card should display:
+
+- Scholarship name.
+- Organization.
+- Scholarship category.
+- Funding amount or benefit.
+- Deadline.
+- Education level.
+- Location or applicable region.
+- Eligibility assessment.
+- Match percentage, only when meaningful.
+- Save button.
+- View Details button.
+
+## Search functionality
+
+Support searching by:
+- Scholarship name.
+- Provider.
+- Course.
+- Category.
+- Education level.
+- State.
+- Keyword.
+
+## Filters
+
+Implement:
+- Government / Private / Institutional.
+- Undergraduate / Postgraduate.
+- Merit-based / Need-based.
+- State / National.
+- Funding range.
+- Deadline.
+- Application status.
+- Eligibility status.
+
+All filters must actually work together.
+
+## Personalized sections
+
+Create three sections:
+
+### Best Matches
+
+Scholarships for which all currently known mandatory eligibility criteria are satisfied.
+
+### Explore More
+
+Opportunities that may be relevant but require additional information or verification.
+
+### Closing Soon
+
+Matching opportunities approaching their application deadlines.
+
+## Scholarship detail page
+
+Display:
+
+- Complete scholarship description.
+- Provider information.
+- Benefits and award amount.
+- Eligibility conditions.
+- Required documents.
+- Application procedure.
+- Deadline.
+- Official source.
+- Official application link.
+- Last verified date.
+- Save scholarship button.
+- Start application button.
+
+Clearly distinguish between official information and platform-generated explanations.
+
+## Data integrity
+
+Do not invent real scholarship opportunities.
+
+Build a curated seed dataset with clearly identified demonstration records if verified live data is unavailable.
+
+Each scholarship record must support:
+- Source URL.
+- Provider.
+- Deadline.
+- Eligibility rules.
+- Required documents.
+- Verification status.
+- Last verified timestamp.
+
+---
+
+# 9. CORE FEATURE 03 — ELIGIBILITY INTELLIGENCE ENGINE
+
+This is the most important technical differentiator.
+
+Build an explainable, deterministic eligibility assessment system.
+
+Do not rely on AI alone to decide eligibility.
+
+## Eligibility rule structure
+
+Every scholarship must have structured requirements.
+
+Example:
+
+- Education level: Undergraduate.
+- Minimum academic percentage: 75%.
+- Maximum annual family income: ₹3,00,000.
+- Eligible state: Uttar Pradesh.
+- Required course: Engineering.
+
+Store these rules in structured database fields or a structured JSON representation.
+
+## Eligibility engine
+
+Compare the student profile with the scholarship rules.
+
+Support three outcomes:
+
+### 1. Eligible
+
+All mandatory criteria are satisfied.
+
+### 2. Potentially Eligible
+
+Some conditions cannot be verified because information is missing or requires official confirmation.
+
+### 3. Not Eligible
+
+At least one mandatory criterion is definitively not satisfied.
+
+## Eligibility breakdown interface
+
+For every scholarship, display:
+
+- Requirement.
+- Student's information.
+- Required condition.
+- Assessment result.
+- Explanation.
+
+Example:
+
+| Requirement | Student data | Result |
+|---|---|---|
+| Undergraduate | B.Tech | Matched |
+| Income below ₹3 lakh | ₹2.5 lakh | Matched |
+| Minimum 75% | 85% | Matched |
+| Eligible state | Uttar Pradesh | Matched |
+
+These are illustrative values.
+
+## Match score
+
+Create a transparent match score for ranking opportunities.
+
+However:
+
+- Eligibility must remain separate from the match score.
+- Mandatory failed criteria must never be hidden by a high percentage.
+- Missing information must not automatically be treated as satisfied.
+- Show the criteria contributing to the score.
+- Do not describe a percentage as an official probability of receiving funding.
+
+## What-if simulator
+
+Create an interactive feature where users can temporarily modify selected profile values.
+
+Example:
+
+- Change academic percentage.
+- Change family income.
+- Explore another eligible state.
+- Change education level.
+
+Recalculate scholarship eligibility instantly.
+
+These changes must remain simulations unless the student explicitly saves their actual profile changes.
+
+## AI eligibility explanation
+
+Use Gemini through a secure backend endpoint.
+
+Prompt it to explain structured rule-engine results in simple language.
+
+Example:
+
+"Your academic score satisfies this scholarship's minimum requirement. Your income also falls within its stated limit. However, your institution's eligibility still needs verification."
+
+AI must never invent eligibility conditions or override deterministic results.
+
+---
+
+# 10. CORE FEATURE 04 — APPLICATION COMMAND CENTER
+
+Build a functional scholarship application management system.
+
+## Application statuses
+
+Implement:
+
+1. Saved.
+2. Preparing.
+3. Ready to Apply.
+4. Submitted.
+5. Under Review.
+6. Approved.
+7. Rejected.
+8. Withdrawn.
+
+## Dashboard views
+
+Provide:
+
+- Kanban board.
+- List view.
+- Application details.
+- Activity timeline.
+
+## Application information
+
+Store:
+- Scholarship ID.
+- Student ID.
+- Application status.
+- Application reference number.
+- Date saved.
+- Date submitted.
+- Last updated date.
+- Student notes.
+- Personal next action.
+
+## Functional capabilities
+
+- Save scholarship.
+- Start an application workspace.
+- Update application status.
+- Add application notes.
+- Record reference numbers.
+- Track submission dates.
+- Remove or withdraw an application.
+- View application history.
+
+## Next Best Action engine
+
+This is a critical feature.
+
+For every application, identify the most useful next action.
+
+Examples:
+
+- Complete your student profile.
+- Upload missing income certificate.
+- Review scholarship requirements.
+- Complete application preparation.
+- Record submission confirmation.
+- Check upcoming deadline.
+
+Show these recommendations on both the application details page and dashboard.
+
+Do not claim that an application was submitted to an external provider unless an actual verified integration exists.
+
+---
+
+# 11. CORE FEATURE 05 — SMART DOCUMENT VAULT
+
+Build a secure document management system.
+
+## Document categories
+
+Support:
+
+- Identity proof.
+- Income certificate.
+- Academic marksheets.
+- Bonafide certificate.
+- Caste certificate, where applicable.
+- Bank proof.
+- Photograph.
+- Other documents.
+
+## Upload interface
+
+Implement:
+
+- Drag and drop.
+- File selection.
+- Upload progress.
+- File preview where supported.
+- File name.
+- File size.
+- File type.
+- Upload date.
+- Optional expiry date.
+- Document status.
+
+Use Supabase Storage.
+
+Accept appropriate file formats such as:
+- PDF.
+- JPG.
+- JPEG.
+- PNG.
+
+Set sensible file-size limits.
+
+## Document statuses
+
+- Uploaded.
+- Pending review.
+- Verified.
+- Rejected.
+- Expired.
+- Requires renewal.
+
+Do not mark documents as officially verified without an actual verification process.
+
+## Smart document matching
+
+When a student saves a scholarship:
+
+1. Retrieve its required document list.
+2. Compare requirements with the student's document vault.
+3. Identify available documents.
+4. Identify missing documents.
+5. Show the readiness percentage.
+6. Provide upload actions for missing items.
+
+## Document reuse intelligence
+
+Allow the same uploaded document to satisfy multiple scholarship requirements when the document type and validity conditions are compatible.
+
+Never assume that a document accepted by one provider will automatically be accepted by another.
+
+## Security
+
+- Use private storage buckets.
+- Apply user-specific access policies.
+- Use secure signed URLs.
+- Validate file types and sizes.
+- Protect against unauthorized file access.
+- Never expose document URLs publicly.
+
+---
+
+# 12. CORE FEATURE 06 — DEADLINE INTELLIGENCE & PERSONALIZED CALENDAR
+
+Build an intelligent deadline management system.
+
+## Calendar
+
+Provide:
+
+- Monthly view.
+- Weekly view.
+- Upcoming deadlines.
+- Submission dates.
+- Application milestones.
+- Personal reminders.
+
+Use a clean, interactive calendar interface.
+
+## Deadline categories
+
+- Application deadline.
+- Document preparation deadline.
+- Submission reminder.
+- Scholarship announcement.
+- Personal task.
+
+## Deadline urgency
+
+Implement:
+
+- Critical.
+- Urgent.
+- Upcoming.
+- Completed.
+
+Use configurable urgency thresholds.
+
+## Deadline Risk Intelligence
+
+Calculate priority based on:
+
+- Days remaining.
+- Application status.
+- Document readiness.
+- Remaining preparation tasks.
+
+Example:
+
+A scholarship closing in two days with several missing documents should receive a higher priority than one closing in twenty days with a complete application.
+
+Clearly distinguish calculated reminders from officially published deadlines.
+
+## Personalized briefing
+
+Create a dashboard widget titled:
+
+"Your GRANTLY Briefing"
+
+Display:
+
+- Today's priorities.
+- Scholarships closing soon.
+- Missing documents.
+- Applications requiring attention.
+- Upcoming personal tasks.
+
+## Notifications
+
+Implement an in-app notification center.
+
+Support:
+- Upcoming deadlines.
+- Missing documents.
+- Profile completion reminders.
+- Application status changes.
+- Important updates.
+
+Notifications should be generated from actual platform events and data.
+
+If email or push notifications are not configured, clearly label them as unavailable rather than pretending they were sent.
+
+---
+
+# 13. ASK GRANTLY — AI ASSISTANT
+
+This is an additional layer that connects the six modules.
+
+Build a professional AI chat experience.
+
+The assistant should be able to:
+
+- Explain scholarship requirements.
+- Explain eligibility assessments.
+- Find matching scholarships.
+- Explain application steps.
+- Identify missing documents.
+- Summarize scholarship information.
+- Explain upcoming deadlines.
+- Answer questions about the student's saved applications.
+
+Example questions:
+
+1. "Which scholarships match my profile?"
+2. "Why am I not eligible for this scholarship?"
+3. "What documents do I need?"
+4. "Which scholarship deadline is approaching first?"
+5. "What should I complete today?"
+6. "Explain this scholarship in simple Hindi."
+
+## AI safety and reliability
+
+The assistant must:
+
+- Use the authenticated student's authorized data only.
+- Retrieve scholarship information from the database.
+- Provide official source links.
+- Distinguish confirmed information from uncertainty.
+- Never fabricate scholarship opportunities.
+- Never invent deadlines.
+- Never guarantee scholarship approval.
+- Never expose another student's information.
+
+Use structured responses where possible.
+
+---
+
+# 14. MAIN DASHBOARD EXPERIENCE
+
+The authenticated dashboard must feel like the control center of the product.
+
+## Sidebar navigation
+
+Include:
+
+**Workspace**
+- Overview.
+- Discover Scholarships.
+- My Applications.
+- Document Vault.
+- Calendar.
+
+**Intelligence**
+- Eligibility Insights.
+- Ask GRANTLY.
+
+**Account**
+- My Profile.
+- Notifications.
+- Settings.
+
+Include:
+- GRANTLY logo.
+- Student profile avatar.
+- Theme toggle.
+- Collapsible sidebar.
+- Responsive mobile navigation.
+
+## Dashboard overview
+
+Create the following sections:
+
+### Welcome section
+
+"Good morning, [Student Name]."
+
+Subtitle:
+
+"Let's make your next opportunity count."
+
+### Statistics cards
+
+- Matched Scholarships.
+- Saved Opportunities.
+- Active Applications.
+- Upcoming Deadlines.
+
+All values must come from actual application data.
+
+### Scholarship recommendations
+
+Display the top relevant opportunities.
+
+### Application progress
+
+Show a meaningful chart based on actual application statuses.
+
+### Upcoming deadlines
+
+Display the next important deadlines.
+
+### Document readiness
+
+Show the student's overall document readiness.
+
+### GRANTLY Briefing
+
+Display personalized actions generated from the student's current state.
+
+Avoid excessive charts and unnecessary statistics.
+
+---
+
+# 15. DATABASE ARCHITECTURE
+
+Design a normalized, scalable Supabase PostgreSQL schema.
+
+Create appropriate tables.
+
+### profiles
+
+- id.
+- full_name.
+- date_of_birth.
+- state.
+- district.
+- education_level.
+- institution.
+- course.
+- academic_year.
+- graduation_year.
+- academic_score.
+- score_type.
+- annual_family_income.
+- category, where applicable.
+- preferences.
+- created_at.
+- updated_at.
+
+### scholarships
+
+- id.
+- title.
+- slug.
+- provider.
+- description.
+- category.
+- funding_amount.
+- funding_type.
+- education_level.
+- eligible_states.
+- official_url.
+- source_url.
+- deadline.
+- application_start_date.
+- verification_status.
+- last_verified_at.
+- created_at.
+
+### scholarship_rules
+
+- id.
+- scholarship_id.
+- rule_type.
+- operator.
+- required_value.
+- is_mandatory.
+- explanation.
+
+### scholarship_documents
+
+- id.
+- scholarship_id.
+- document_type.
+- requirement_description.
+- is_mandatory.
+- validity_rules.
+
+### saved_scholarships
+
+- id.
+- user_id.
+- scholarship_id.
+- saved_at.
+
+### applications
+
+- id.
+- user_id.
+- scholarship_id.
+- status.
+- reference_number.
+- saved_at.
+- submitted_at.
+- notes.
+- next_action.
+- created_at.
+- updated_at.
+
+### documents
+
+- id.
+- user_id.
+- document_type.
+- file_path.
+- file_name.
+- file_size.
+- expiry_date.
+- verification_status.
+- created_at.
+
+### application_documents
+
+- id.
+- application_id.
+- document_id.
+- requirement_id.
+- status.
+
+### reminders
+
+- id.
+- user_id.
+- scholarship_id.
+- application_id.
+- title.
+- reminder_type.
+- due_at.
+- status.
+
+### notifications
+
+- id.
+- user_id.
+- title.
+- message.
+- notification_type.
+- is_read.
+- created_at.
+
+### activity_logs
+
+- id.
+- user_id.
+- application_id.
+- action.
+- description.
+- created_at.
+
+Add appropriate foreign keys, indexes, constraints and timestamps.
+
+Create Row Level Security policies.
+
+A user must only be able to read or modify their own private profile, applications, documents, reminders and notifications.
+
+Scholarship information can be publicly readable where appropriate, but modifications must be restricted to authorized administrators.
+
+Do not put Supabase service-role keys in frontend code.
+
+---
+
+# 16. SAMPLE DATA AND DEMONSTRATION MODE
+
+Create a polished demonstration experience.
+
+Seed the database with a small but meaningful set of scholarship opportunities.
+
+Use:
+- Verified official scholarships where source information is available.
+- Clearly marked sample scholarships for demonstration.
+- Realistic funding amounts only when sourced.
+- Clearly identified hypothetical amounts otherwise.
+
+Every record must contain a source or an explicit demonstration-data label.
+
+Create a sample student profile for demonstration purposes.
+
+The demo must showcase all six features together.
+
+Do not display fictional scholarship data as officially verified.
+
+Provide a resettable demo environment if practical.
+
+---
+
+# 17. INTERACTION AND FUNCTIONALITY REQUIREMENTS
+
+Every visible interactive component must work.
+
+Implement:
+
+- Working buttons.
+- Working navigation.
+- Search.
+- Combined filters.
+- Sorting.
+- Forms.
+- Field validation.
+- Authentication.
+- Profile editing.
+- Scholarship saving.
+- Eligibility assessment.
+- What-if simulator.
+- Application status changes.
+- Document uploading.
+- Document matching.
+- Calendar navigation.
+- Reminder creation.
+- Notification interactions.
+- Theme switching.
+- AI assistant states.
+
+Provide:
+- Loading states.
+- Error states.
+- Empty states.
+- Success messages.
+- Confirmation dialogs.
+- Helpful validation messages.
+
+Never use buttons that look functional but do nothing.
+
+Where a backend integration is unavailable, provide a clearly labeled demo interaction rather than falsely claiming that a real action occurred.
+
+---
+
+# 18. RESPONSIVE DESIGN
+
+The entire product must work beautifully across:
+
+- Large desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Desktop:
+- Spacious dashboard.
+- Sidebar navigation.
+- Multi-column cards.
+
+Tablet:
+- Adaptive sidebar.
+- Responsive card grids.
+
+Mobile:
+- Collapsible navigation.
+- Mobile-friendly filters.
+- Full-width forms.
+- Touch-friendly buttons.
+- Responsive charts.
+- Scrollable or adaptive tables.
+
+Do not simply shrink the desktop design.
+
+Design mobile layouts intentionally.
+
+---
+
+# 19. ANIMATION AND MICROINTERACTIONS
+
+Use animations carefully.
+
+Landing page:
+- Smooth entrance animations.
+- Subtle hero visual movement.
+- Scroll-based section reveals.
+- Button hover transitions.
+
+Dashboard:
+- Smooth page transitions.
+- Card hover states.
+- Progress bar animations.
+- Subtle notification interactions.
+- Smooth modal transitions.
+
+Use reduced-motion accessibility support.
+
+Avoid heavy 3D animations that negatively affect performance or distract from important functionality.
+
+---
+
+# 20. ACCESSIBILITY AND PERFORMANCE
+
+Follow good engineering practices.
+
+- Semantic HTML.
+- Accessible labels.
+- Keyboard navigation.
+- Visible focus states.
+- Proper color contrast.
+- Meaningful alt text.
+- Responsive image handling.
+- Lazy loading.
+- Code splitting.
+- Reusable components.
+- Proper error boundaries.
+- SEO metadata on public pages.
+- Optimized asset loading.
+
+Aim for strong Lighthouse performance and accessibility scores.
+
+---
+
+# 21. PROJECT ARCHITECTURE
+
+Organize the project cleanly.
+
+Suggested structure:
+
+src/
+- assets/
+- components/
+  - common/
+  - layout/
+  - dashboard/
+  - scholarships/
+  - eligibility/
+  - applications/
+  - documents/
+  - calendar/
+- pages/
+  - public/
+  - auth/
+  - dashboard/
+- hooks/
+- contexts/
+- services/
+- lib/
+- utils/
+- types/
+- data/
+- routes/
+
+supabase/
+- migrations/
+- seed.sql
+- functions/
+
+Keep business logic separate from presentation logic.
+
+Create reusable components such as:
+
+- ScholarshipCard.
+- EligibilityBadge.
+- MatchBreakdown.
+- DeadlineCard.
+- DocumentCard.
+- ApplicationStatusBadge.
+- ProfileCompletion.
+- DashboardStatCard.
+- EmptyState.
+- LoadingSkeleton.
+- ConfirmDialog.
+
+---
+
+# 22. FINAL QUALITY REQUIREMENTS
+
+Before considering the project complete, verify the following.
+
+### Product quality
+
+- All six core features exist.
+- All six are connected.
+- Student information persists.
+- Scholarship discovery works.
+- Eligibility is calculated using real rules.
+- Application status changes persist.
+- Documents can be securely uploaded.
+- Calendar and deadlines work.
+- AI assistant uses actual scholarship context.
+
+### Design quality
+
+- Consistent brand identity.
+- Professional typography.
+- Consistent spacing.
+- Excellent desktop layout.
+- Excellent mobile layout.
+- Attractive empty and loading states.
+- No broken images.
+- No overlapping elements.
+- No placeholder text.
+
+### Technical quality
+
+- No broken routes.
+- No console errors.
+- No exposed secrets.
+- Correct authentication.
+- Proper RLS.
+- No unauthorized document access.
+- Proper form validation.
+- No fake success messages.
+- No non-functional buttons.
+
+### Hackathon presentation
+
+The finished product should be ready for a live demonstration.
+
+A judge should be able to understand the value of GRANTLY within 30 seconds and explore its complete functionality within a few minutes.
+
+---
+
+# 23. THE SIGNATURE HACKATHON DIFFERENTIATORS
+
+Give special attention to these capabilities:
+
+**1. Explainable Eligibility Intelligence**
+
+Show exactly why a student matches or fails a scholarship's requirements.
+
+**2. What-if Eligibility Simulator**
+
+Allow students to explore how changes to profile information affect eligibility without overwriting their real information.
+
+**3. Document Reuse Intelligence**
+
+Recognize existing documents and identify where they can satisfy multiple scholarship requirements.
+
+**4. Next Best Action**
+
+Tell students what they should do next instead of merely showing their application status.
+
+**5. Deadline Risk Intelligence**
+
+Prioritize deadlines based on remaining time and application readiness.
+
+**6. Opportunity Recovery**
+
+When a student doesn't qualify for one scholarship, recommend alternative opportunities that better match their profile.
+
+These should be implemented as connected capabilities rather than isolated showcase widgets.
+
+---
+
+# 24. FINAL PRODUCT EXPERIENCE
+
+The final user journey should work like this:
+
+1. Student visits GRANTLY.
+2. Creates an account.
+3. Completes their student profile.
+4. Enters the personalized dashboard.
+5. Receives relevant scholarship recommendations.
+6. Opens a scholarship.
+7. Understands their eligibility through the intelligence engine.
+8. Uses the what-if simulator if needed.
+9. Saves the opportunity.
+10. Gets an application workspace.
+11. Checks the document requirements.
+12. Uploads missing documents.
+13. Tracks application preparation and submission.
+14. Receives deadline reminders.
+15. Uses Ask GRANTLY for additional guidance.
+
+Every step should feel natural and connected.
+
+---
+
+# 25. DEVELOPMENT INSTRUCTIONS — VERY IMPORTANT
+
+Do not generate the entire project as one enormous, unstructured code dump.
+
+Work in a systematic development sequence.
+
+**Phase 1:** Project foundation, design system, routing and responsive public landing page.
+
+**Phase 2:** Authentication, onboarding and Smart Student Profile.
+
+**Phase 3:** Scholarship database, discovery engine and scholarship detail pages.
+
+**Phase 4:** Deterministic eligibility engine, explanations and what-if simulator.
+
+**Phase 5:** Application Command Center and activity tracking.
+
+**Phase 6:** Secure Document Vault and document requirement matching.
+
+**Phase 7:** Deadline Intelligence, calendar and notifications.
+
+**Phase 8:** Ask GRANTLY AI integration.
+
+**Phase 9:** Connect all six modules, test complete workflows, optimize and polish.
+
+At the end of every phase:
+
+- Check for errors.
+- Verify the feature works.
+- Check responsive behavior.
+- Preserve existing functionality.
+- Avoid breaking previously completed modules.
+
+If Supabase credentials are not available, create a clearly separated demonstration mode with realistic interactions and a straightforward backend integration path. Never pretend that frontend-only data is securely stored in Supabase.
+
+Do not stop after producing the landing page or dashboard mockup.
+
+Complete the actual application.
+
+---
+
+# FINAL CREATIVE DIRECTION
+
+GRANTLY should not feel like a scholarship directory.
+
+It should feel like a student's personal financial opportunity command center.
+
+The experience must communicate three things:
+
+**Clarity:** Students understand their opportunities.
+
+**Confidence:** Students understand why they qualify and what they need.
+
+**Control:** Students can manage their complete scholarship journey.
+
+Build something that looks professionally designed, feels genuinely useful, and demonstrates meaningful technical implementation.
+
+**Final brand statement:**
+
+"GRANTLY — Discover opportunities. Understand your eligibility. Take control of your future."
+
+Now build GRANTLY as a complete, polished, functional, responsive, hackathon-ready product.

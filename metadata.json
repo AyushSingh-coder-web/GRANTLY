@@ -1,0 +1,6 @@
+{
+  "name": "GRANTLY - Unified Scholarship Discovery & Management Platform",
+  "description": "Intelligent, deterministic scholarship discovery, eligibility assessment, application command center, document vault, and deadline intelligence for students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
